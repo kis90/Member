@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/custom.css">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+	<script src="static/jquery-3.5.1.min.js"></script>
+	<script src="static/script.js"></script>
+
+	<meta name="viewport" content="widht=device-width, initial-scale=1" >
+</head>
+<body >
+<div class="mainCover">
+<!-- Sliding Menu -->
+<div id="mySidepanel2" class="sidepanel memMenu">
+  <a href="#">DB Assessment</a>
+  <a href="#">ETL Assessment</a>
+  <a href="#">Recommended cloud options</a>
+  <a href="#">Migration path</a>
+  <a href="#">ROI Calculate</a>
+</div>
+<button class="openbtn2 memMenu">☰</button>
+<!-- Sliding Menu End-->
+
+<!-- Members input page2 -->
+<div id="inputPage2" class="inputPage2 bg pageCover">
+<h5>Please provide below inputs</h5>
+
+<form action="" method="post" id="inputPage2form">
+<table align="center" cellpadding = "6">
+
+<tr>
+<td width="40%">Can we connect to ETL Code Repository</td>
+<td>
+<div class="radioBtn">
+	<input name="Connect ETL" type="radio" value="Yes" id="etlRep1"/><label class="form-check-label" for="etlRep1">Yes</label>
+	<input name="Connect ETL" type="radio" value="No" id="etlRep2"/><label class="form-check-label" for="etlRep2">No</label>
+	</div>
+</td>
+</tr>
+
+<tr>
+<td class="vAlignT">Please Provide ETL Server Details
+
+<td>
+	<div class="hostTable">
+	<table>
+	<tr>
+	<td>Host Name</td>
+	<td><input type="text" name="ETL Host name" maxlength="30" class="form-control wd300"/></td>
+	</tr>
+
+	<tr>
+	<td>User Name</td>
+	<td><input type="text" name="ETL UserName" maxlength="30" class="form-control wd300"/></td>
+	</tr>
+
+	<tr>
+	<td>Password</td>
+	<td><input type="text" name="ETL Password" maxlength="30" class="form-control wd300"/></td>
+	</tr>
+
+
+	</table>
+	 </div>
+</td>
+</tr>
+
+
+<tr>
+<td>Download Template to provide input<br /></td>
+<td>
+<button class="btnDownload"><i class="downloadIcon"></i>ETL Volumentrics</button>
+<button class="btnDownload"><i class="downloadIcon"></i>Workload Details</button>
+</td>
+</tr>
+
+
+<tr>
+<td>Can we connect to BI Tool Repository</td>
+<td>
+<div class="radioBtn">
+	<input name="Connect BiTool" type="radio" value="Yes" id="biTool1"/><label class="form-check-label" for="biTool1">Yes</label>
+	<input name="Connect BiTool" type="radio" value="No" id="biTool2"/><label class="form-check-label" for="biTool2">No</label>
+	</div>
+</td>
+</tr>
+
+<tr>
+<td class="vAlignT">Please Provide BI Server Details</td>
+
+<td>
+	<div class="hostTable">
+	<table>
+	<tr>
+	<td>Host Name</td>
+	<td><input type="text" name="BI Host name" maxlength="30" class="form-control wd300"/></td>
+	</tr>
+
+	<tr>
+	<td>User Name</td>
+	<td><input type="text" name="BI UserName" maxlength="30" class="form-control wd300"/></td>
+	</tr>
+
+	<tr>
+	<td>Password</td>
+	<td><input type="text" name="BI Password" maxlength="30" class="form-control wd300"/></td>
+	</tr>
+
+
+	</table>
+	 </div>
+</td>
+</tr>
+
+
+<tr>
+<td class="vAlignT">Download Template to provide input</td>
+<td>
+<button class="btnDownload"><i class="downloadIcon"></i> BI Volumentrics</button>
+<button class="btnDownload"><i class="downloadIcon"></i> Workload Details</button>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<div class="tabs tabs50">
+			<div class="tabBtn padL0"><button type="button" class="btn btn-primary btn-block mrgT10">Previous</button></div>
+			<div id="tabBtn"  class="msg">{{ msg }}</div>
+            <input type="submit" id="submitMemLogin" class="btn clkBtn btn-primary btn-block mrgT10" value="Next">
+</td>
+</tr>
+</table>
+</form>
+</div>
+<!-- Search Option -->
+<div class="searchContainer wd180">
+	<div class="searchCover">
+      <input type="text" placeholder="Search.." name="search" class="form-control searchControl">
+      <button type="submit" class="searchBtn"></button>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

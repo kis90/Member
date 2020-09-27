@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/custom.css">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+	<script src="static/jquery-3.5.1.min.js"></script>
+	<script src="static/script.js"></script>
+
+	<meta name="viewport" content="widht=device-width, initial-scale=1" >
+</head>
+<body >
+<div class="mainCover">
+<!-- Sliding Menu -->
+<div id="mySidepanel2" class="sidepanel memMenu">
+  <a href="#">DB Assessment</a>
+  <a href="#">ETL Assessment</a>
+  <a href="#">Recommended cloud options</a>
+  <a href="#">Migration path</a>
+  <a href="#">ROI Calculate</a>
+</div>
+<button class="openbtn2 memMenu">☰</button>
+<!-- Sliding Menu End-->
+
+<!-- Members input page1 -->
+	<div id="inputPage1" class="bg inputPage1 pageCover">
+		<h5>Congratulations, you have made the right decision by selecting PROBING TOOL</h5>
+<form action="" method="post" id="inputPage1form">
+
+<table align="center" cellpadding = "6" class="mrgT20">
+
+<tr>
+<td width="40%">Select Current Technology Platform</td>
+<td>
+<select name="Technology Platfornm"class="form-control wd300">
+<option value="Teradata">Teradata</option>
+<option value="Exadata">Exadata</option>
+<option value="Greenplum">Greenplum</option>
+<option value="Neteeza">Neteeza</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Select OS Platform</td>
+<td>
+<select name="OS Platform" class="form-control wd300">
+<option value="Unix/Linux">Unix/Linux</option>
+<option value="Windows">Windows</option>
+<option value="Solaris">Solaris</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Can we connect an instant database</td>
+<td>
+	<div class="radioBtn">
+	<input name="Connect Database" type="radio" value="Yes" id="instantDB1"/><label class="form-check-label" for="instantDB1">Yes</label>
+	<input name="Connect Database" type="radio" value="No" id="instantDB2"/><label class="form-check-label" for="instantDB2">No</label>
+	</div>
+</td>
+</tr>
+
+<tr>
+<td class="vAlignT">Please Provide DB Connection String</td>
+
+<td>
+	<div class="hostTable">
+	<table>
+	<tr>
+	<td >Host Name</td>
+	<td><input type="text" name="DB Host name" maxlength="30" class="form-control wd300" /></td>
+	</tr>
+
+	<tr>
+	<td>User Name</td>
+	<td><input type="text" name="DB UserName" maxlength="30" class="form-control wd300" /></td>
+	</tr>
+
+	<tr>
+	<td>Password</td>
+	<td><input type="text" name="DB Password" maxlength="30" class="form-control wd300" /></td>
+	</tr>
+	</table>
+	</div>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>Download Template to provide input<br />APPLIED FOR</td>
+<td>
+<button class="btnDownload"><i class="downloadIcon"></i> DM Volumentrics</button>
+<button class="btnDownload"><i class="downloadIcon"></i> Schema Details</button>
+<button class="btnDownload"><i class="downloadIcon"></i> Workload Details</button>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<div class="tabs tabs50">
+			<div class="tabBtn padL0"><button type="button" class="btn btn-primary btn-block mrgT10">Previous</button></div>
+			<div id="tabBtn"  class="msg">{{ msg }}</div>
+            <input type="submit" id="submitMemLogin" class="btn clkBtn btn-primary btn-block mrgT10" value="Next">
+
+</td>
+</tr>
+</table>
+ </form>
+</div>
+	<!-- Search Option -->
+<div class="searchContainer wd180">
+	<div class="searchCover">
+      <input type="text" placeholder="Search.." name="search" class="form-control searchControl">
+      <button type="submit" class="searchBtn"></button>
+	</div>
+</div>
+</div>
+</body>
+</html>

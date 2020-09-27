@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/custom.css">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+	<script src="static/jquery-3.5.1.min.js"></script>
+	<script src="static/script.js"></script>
+
+	<meta name="viewport" content="widht=device-width, initial-scale=1" >
+</head>
+<body >
+<div class="mainCover">
+<!-- Sliding Menu -->
+<div id="mySidepanel2" class="sidepanel memMenu">
+  <a href="#">DB Assessment</a>
+  <a href="#">ETL Assessment</a>
+  <a href="#">Recommended cloud options</a>
+  <a href="#">Migration path</a>
+  <a href="#">ROI Calculate</a>
+</div>
+<button class="openbtn2 memMenu">☰</button>
+<!-- Sliding Menu End-->
+
+<!-- Members input page3 -->
+<div id="inputPage3" class="inputPage3 bg pageCover">
+<h5>Please provide below inputs</h5>
+<form action="" method="post" id="inputPage3form">
+
+<table align="center" cellpadding = "6">
+
+<tr>
+<td width="40%">What defines success for Migration?</td>
+<td><input type="text" name="Success Host name" maxlength="30"  class="form-control wd300"/></td>
+</tr>
+
+
+<tr>
+<td>Can you provide physical/logical datamodel?</td>
+<td>
+<div class="custom-file">
+    <input type="file" class="custom-file-input" id="physicalDatamodel">
+    <label class="custom-file-label" for="physicalDatamodel">Choose file...</label>
+  </div>
+</tr>
+
+
+<tr>
+<td>Please furnish the growth estimations of data volumes?<br /></td>
+<td>
+<select name="Growth Estimation" class="form-control wd300">
+<option value="1% daily">1% daily</option>
+<option value="2% monthly">2% monthly</option>
+<option value="10% yearly">10% yearly</option>
+<option value="Other - VALUE">Other - VALUE</option>
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td>What is the data retention and archival policy?<br /></td>
+<td>
+
+<select name="Data Retention" class="form-control wd300">
+<option value="6 months">6 months</option>
+<option value="1 year">1 year</option>
+<option value="2 years">2 years</option>
+<option value="6 years">6 years</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>What is the data archival policy?<br /></td>
+<td>
+<select name="Data Archival" class="form-control wd300">
+<option value="Daily">Daily</option>
+<option value="Weekly">Weekly</option>
+<option value="Monthly">Monthly</option>
+<option value="Fortnightly">Fortnightly</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>What DR (Disaster Recovery) strategy is implemented?</td>
+<td>
+
+<select name="DR Strategy" class="form-control wd300">
+<option value="Active-Active system">Active-Active system</option>
+<option value="Active-Passive System">Active-Passive System</option>
+<option value="Dual Load strategy">Dual Load strategy</option>
+<option value="Restore/Recovery from Backup">Restore/Recovery from Backup</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>What is the % prod capacity required in lower envs?<br /></td>
+<td>
+<select name="Product" class="form-control wd300">
+<option value="5% DEV, 5% UAT, 10% LP">5% DEV, 5% UAT, 10% LP</option>
+<option value="5% DEV, 10% UAT, 20% LP">5% DEV, 10% UAT, 20% LP</option>
+<option value="10% DEV, 20% UAT, 20% LP">10% DEV, 20% UAT, 20% LP</option>
+<option value="10% DEV, 20% UAT, 30% LP">10% DEV, 20% UAT, 30% LP</option>
+</select>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td>How many Teradata licenses are being used currently?<br /></td>
+<td>
+<select name="Teradata License" class="form-control wd300">
+<option value="10">10</option>
+<option value="50">50</option>
+<option value="100">100</option>
+<option value="200">200</option>
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td>What is growth expected in number of users?<br /></td>
+<td>
+
+<select name="Expected Growth" class="form-control wd300">
+<option value="1% daily">1% daily</option>
+<option value="2% daily">2% daily</option>
+<option value="10% daily">10% daily</option>
+<option value="Other - VALUE">Other - VALUE</option>
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td>Can you provide architecture diagram</td>
+<td>
+<div class="custom-file">
+    <input type="file" class="custom-file-input" id="archDiagram">
+    <label class="custom-file-label" for="archDiagram">Choose file...</label>
+  </div>
+</tr>
+
+
+<tr>
+<td>What ETL (Extract, Transform and Load) tools are being used?<br /></td>
+<td>
+<select name="ETL Tools" class="form-control wd300">
+<option value="Ab-Initio">Ab-Initio</option>
+<option value="Datastage">Datastage</option>
+<option value="Informatica">Informatica</option>
+<option value="Teradata Utilities">Teradata Utilities</option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<div class="tabs tabs50">
+			<div class="tabBtn padL0"><button type="button" class="btn btn-primary btn-block mrgT10">Previous</button></div>
+			<div id="tabBtn"  class="msg">{{ msg }}</div>
+            <input type="submit" id="submitMemLogin" class="btn clkBtn btn-primary btn-block mrgT10" value="Next">
+</td>
+</tr>
+</table>
+</form>
+</div>
+<!-- Search Option -->
+<div class="searchContainer wd180">
+	<div class="searchCover">
+      <input type="text" placeholder="Search.." name="search" class="form-control searchControl">
+      <button type="submit" class="searchBtn"></button>
+	</div>
+</div>
+</div>
+
+</body>
+</html>

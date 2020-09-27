@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/custom.css">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+	<meta name="viewport" content="widht=device-width, initial-scale=1" >
+</head>
+<body >
+<div class="mainCover">
+<!-- Member Login Page -->
+<div id="memLoginPage" class="memLoginPage pageCover">
+	<div class="jumpText">Jump start your Cloud Migration Journey with us!!</div>
+		<div class="loginBox" >
+		<form action="" method="post" id="memLoginform">
+			<h5>Member Login</h5>
+			<input type="email" data-error="err" name="username" class="emailLogin form-control" placeholder="Enter email">
+
+
+			<input type="password" name="password" class="form-control mrgT10" placeholder="Password">
+            <div id="correct"  class="msg">{{ msg }}</div>
+            <input type="submit" id="submitMemLogin" class="btn clkBtn btn-primary btn-block mrgT10" value="Login">
+            <div id="correct" style="color:gray;"></div>
+
+			</form>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

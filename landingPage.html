@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/custom.css">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+	<script src="static/jquery-3.5.1.min.js"></script>
+	<script src="static/script.js"></script>
+
+	<meta name="viewport" content="widht=device-width, initial-scale=1" >
+</head>
+<body >
+<div class="mainCover">
+<!-- Sliding Menu -->
+<div id="mySidepanel2" class="sidepanel memMenu">
+  <a href="#">DB Assessment</a>
+  <a href="#">ETL Assessment</a>
+  <a href="#">Recommended cloud options</a>
+  <a href="#">Migration path</a>
+  <a href="#">ROI Calculate</a>
+</div>
+<button class="openbtn2 memMenu">☰</button>
+<!-- Sliding Menu End-->
+
+<!-- Members landing page -->
+	<div id="memLandingPage" class="memLandingPage bg pageCover">
+        <form action="" method="post" id="memLoginform">
+		<h5>Welcome to the Probe tool. This is an Artificial Intelligence based tool for Assessment of On-premise DatawareHouse Platforms</h5>
+		<div class="tabs tabs50 mrgT20" >
+            <div id="tabBtn"  class="msg">{{ msg }}</div>
+            <input type="submit" id="submitMemLogin" class="btn clkBtn btn-primary btn-block mrgT10" value="GET STARTED">
+
+			<div class="tabBtn"><button type="button" class="btn btn-primary btn-block mrgT10 active">How it is work?</button></div>
+		</div>
+		<div class="videoCover">
+			<video width="600" height="315" controls>
+		  <source src="dummy.mp4" type="video/mp4">
+		  <source src="dummy.ogg" type="video/ogg">
+		Your browser does not support the video tag.
+		</video>
+		</div>
+        </form>
+	</div>
+	<!-- Search Option -->
+<div class="searchContainer wd180">
+	<div class="searchCover">
+      <input type="text" placeholder="Search.." name="search" class="form-control searchControl">
+      <button type="submit" class="searchBtn"></button>
+	</div>
+</div>
+</div>
+</body>
+</html>
